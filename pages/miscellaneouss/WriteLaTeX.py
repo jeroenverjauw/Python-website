@@ -14,7 +14,7 @@ image_format = st.radio("Select image format", ["PNG", "SVG"])
 
 if latex_code:
 
-
+    plt.rcParams['text.usetex'] = True
     st.latex(fr'''{latex_code}''')
 
     fig, ax = plt.subplots(figsize=(0.01, 0.01))
