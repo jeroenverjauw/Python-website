@@ -2,3 +2,4 @@ streamlit
 streamlit-ace
 pylatex
 matplotlib
+latextools

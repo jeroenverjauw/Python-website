@@ -39,6 +39,6 @@ if latex_code:
     st.download_button(
         label=f"📥 Download {image_format}",
         data=buf,
-        file_name=f"latex_output.{ext}",
-        mime=mime
+        file_name=f"latex_output.pdf",
+        mime="application/pdf"
     )
