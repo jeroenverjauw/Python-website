@@ -7,7 +7,7 @@ from pylatex.utils import italic, NoEscape
 
 st.title("LaTeX Renderer and Exporter")
 
-latex_code = st.text_area("Enter LaTeX code (no $ signs needed)", "E = mc^2")
+latex_code = st.text_area("Enter LaTeX code (no $ signs needed)", "E = \sqrt{(mc^2)^2+(pc)^2}")
 
 dpi = st.slider("DPI for image export", min_value=50, max_value=600, value=150)
 image_format = st.radio("Select image format", ["PNG", "SVG"])
