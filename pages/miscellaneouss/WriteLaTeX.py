@@ -21,10 +21,7 @@ if latex_code:
     fig.patch.set_alpha(0.0)
     ax.axis("off")
 
-    # ax.text(0.5, 0.5, {latex_code}, fontsize=20, ha='center', va='center')
-
-    buf = BytesIO()
-
+    # ax.text(0.5, 0.5, fr'''{latex_code}''', fontsize=20, ha='center', va='center')
     # Set format and dpi
     if image_format == "PNG":
         fig.savefig(buf, format="png", dpi=dpi, bbox_inches='tight', pad_inches=0.1, transparent=True)
@@ -43,9 +40,3 @@ if latex_code:
         file_name=f"latex_output.{ext}",
         mime=mime
     )
-
-from aspose.tex import *
-from aspose.tex.io import *
-from aspose.tex.presentation.svg import *
-from util import Util
-from os import path
