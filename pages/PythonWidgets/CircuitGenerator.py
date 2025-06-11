@@ -2,6 +2,7 @@ import streamlit as st
 import subprocess
 import tempfile
 from pathlib import Path
+import pdf2svg
 
 def latex_to_svg(latex_code: str) -> Path:
     with tempfile.TemporaryDirectory() as tmpdir:
