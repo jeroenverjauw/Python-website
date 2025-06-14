@@ -31,7 +31,7 @@
 import streamlit as st
 
 Circuit_generator = st.Page("pages/PythonWidgets/CircuitGenerator.py", title="Circuit generator", )
-writelatex = st.Page("pages/miscellaneouss/WriteLaTeX.py", title="Write LaTeX", )
+writelatex = st.Page("pages/miscellaneous/WriteLaTeX.py", title="Write LaTeX", )
 
 pg = st.navigation(
         {

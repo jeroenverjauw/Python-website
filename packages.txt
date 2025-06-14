@@ -1,7 +1,9 @@
 texlive
 texlive-pictures
 texlive-latex-extra
-texlive-fonts-recommended 
+texlive-fonts-recommended
+texlive-extra-utils
 dvipng
 cm-super
 pdf2svg
+inkscape
