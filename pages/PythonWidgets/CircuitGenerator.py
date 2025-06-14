@@ -46,47 +46,47 @@ if image_format == 'PNG':
         value=300
     )
 
-if latex_code: 
-    write_tex_file(latex_code, output_dir)
+# if latex_code: 
+#     write_tex_file(latex_code, output_dir)
 
-    process = run(args=['pdflatex', '-interaction=nonstopmode', '-output-format=pdf', 
-                        f'-output-directory={output_dir.resolve()}', 'main.tex'],
-            stdout=PIPE, stderr=PIPE, cwd=output_dir,
-            timeout=60, text=True)
+#     process = run(args=['pdflatex', '-interaction=nonstopmode', '-output-format=pdf', 
+#                         f'-output-directory={output_dir.resolve()}', 'main.tex'],
+#             stdout=PIPE, stderr=PIPE, cwd=output_dir,
+#             timeout=60, text=True)
 
-    process = run(args = ['pdf2svg', 'main.pdf', 'output.svg'])
+#     process = run(args = ['pdf2svg', 'main.pdf', 'output.svg'])
 
-    crop_svg_with_inkscape('output.svg', 'output.svg')
+#     crop_svg_with_inkscape('output.svg', 'output.svg')
 
 
-    svg_path = output_dir / 'output.svg'
+#     svg_path = output_dir / 'output.svg'
     
 
-    if svg_path.exists():
-        with open(svg_path, "rb") as f:
-            svg_bytes = f.read()
+#     if svg_path.exists():
+#         with open(svg_path, "rb") as f:
+#             svg_bytes = f.read()
 
-    if image_format=='SVG':
-        st.download_button(
-            label="📄 Download svg",
-            data=svg_bytes,
-            file_name="equation.svg",
-            mime="image/svg+xml"
-        )
-    elif image_format=='PNG':
-        subprocess.run(["inkscape", "test.svg","--export-type=png",
-                     "--export-filename=output.png",
-                    f"--export-dpi={dpi}"
-                    ])
-        png_path = output_dir / 'output.png'
-        if png_path.exists():
-            with open(png_path, "rb") as f:
-                png_bytes = f.read()
-        st.download_button(
-            label="📄 Download png",
-            data=png_bytes,
-            file_name="equation.png",
-            mime="image/png"
-        )
+#     if image_format=='SVG':
+#         st.download_button(
+#             label="📄 Download svg",
+#             data=svg_bytes,
+#             file_name="equation.svg",
+#             mime="image/svg+xml"
+#         )
+#     elif image_format=='PNG':
+#         subprocess.run(["inkscape", "test.svg","--export-type=png",
+#                      "--export-filename=output.png",
+#                     f"--export-dpi={dpi}"
+#                     ])
+#         png_path = output_dir / 'output.png'
+#         if png_path.exists():
+#             with open(png_path, "rb") as f:
+#                 png_bytes = f.read()
+#         st.download_button(
+#             label="📄 Download png",
+#             data=png_bytes,
+#             file_name="equation.png",
+#             mime="image/png"
+#         )
 
 
