@@ -53,7 +53,7 @@ def load_file_bytes(path: Path):
     return path.read_bytes() if path.exists() else None
 
 # Streamlit UI
-st.title("LaTeX Rendered and Exporter")
+st.title("LaTeX Exporter")
 
 latex_input = st.text_area(
     r"""Enter LaTeX code (rendered inside \begin{align*}...\end{align*})""",
