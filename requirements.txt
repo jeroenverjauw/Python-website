@@ -4,3 +4,4 @@ pylatex
 matplotlib
 latextools
 drawsvg
+scipy
