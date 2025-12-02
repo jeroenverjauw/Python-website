@@ -93,11 +93,8 @@ with cols_container[-1]:
         )
         col_inputs.append(val_last) 
 
-# DEBUG / OUTPUT
-st.write("Final column values:", col_inputs)
-
 # Example LaTeX expression
-latex_expr = "X_{\pi} haha"
+latex_expr = st.text_input("write something here")
 file_name_latex_expr = latex_expr.replace("\\", "").replace("$", "")
 write_tex_file(latex_expr, TEX_FILE, default_fontsize)
 compile_latex_to_pdf(TEX_FILE, OUTPUT_DIR)
