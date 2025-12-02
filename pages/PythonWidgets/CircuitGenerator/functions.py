@@ -28,7 +28,7 @@ def compile_latex_to_pdf(tex_file: Path, output_dir: Path):
     subprocess.run([
         "pdflatex", "-interaction=nonstopmode", "-output-format=pdf",
         f"-output-directory={output_dir.resolve()}", str(tex_file.resolve())
-    ])
+    ], stdout=subprocess.PIPE, stderr=subprocess.PIPE, cwd=output_dir, timeout=60, text=True, check=True)
 
 def convert_pdf_to_svg(pdf_file: Path, svg_file: Path):
     subprocess.run([

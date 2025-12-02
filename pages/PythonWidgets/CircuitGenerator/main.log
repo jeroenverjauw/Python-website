@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.12.2)  2 DEC 2025 20:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.12.2)  2 DEC 2025 20:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -162,11 +162,12 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  56i,5n,65p,302b,110s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/JeroenVerjauw/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmmi12.pfb>
+onts/cm/cmmi12.pfb><C:/Users/JeroenVerjauw/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr17.pfb>
 Output written on "C:\Users\JeroenVerjauw\projects\Python website\pages\PythonW
-idgets\CircuitGenerator\main.pdf" (1 page, 9296 bytes).
+idgets\CircuitGenerator\main.pdf" (1 page, 18209 bytes).
 PDF statistics:
- 11 PDF objects out of 1000 (max. 8388607)
+ 16 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
