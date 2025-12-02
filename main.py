@@ -1,7 +1,7 @@
 import streamlit as st
 
 Home = st.Page("pages/Home.py",title="")
-Circuit_generator = st.Page("pages/PythonWidgets/CircuitGenerator.py", title="Circuit generator", )
+Circuit_generator = st.Page("pages/PythonWidgets/CircuitGenerator/CircuitGenerator.py", title="Circuit generator", )
 writelatex = st.Page("pages/miscellaneous/WriteLaTeX.py", title="Write LaTeX", )
 markovian = st.Page("pages/QuantumComputingInformation/Markovian_NoneMarkovian.py", title="Markovian noise", )
 

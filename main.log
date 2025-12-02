@@ -1,18 +1,28 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.21)  24 AUG 2025 12:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.12.2)  2 DEC 2025 18:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./main.tex
-(main.tex
+**./pages/PythonWidgets/CircuitGenerator/main.tex
+(pages/PythonWidgets/CircuitGenerator/main.tex
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-25>
 
-(C:\Users\JeroenVerjauw\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cl
-s
-Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(C:\Users\JeroenVerjauw\AppData\Local\Programs\MiKTeX\tex/latex/extsizes\extart
+icle.cls
+Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
 
 (C:\Users\JeroenVerjauw\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
 File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+(C:\Users\JeroenVerjauw\AppData\Local\Programs\MiKTeX\tex/latex/base\exscale.st
+y
+Package: exscale 2018/09/24 v2.1i Standard LaTeX package exscale
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+\big@size=\dimen141
 )
 \c@part=\count196
 \c@section=\count197
@@ -24,7 +34,11 @@ File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
 \c@table=\count269
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
-\bibindent=\dimen141
+\bibindent=\dimen142
+)
+(C:\Users\JeroenVerjauw\AppData\Local\Programs\MiKTeX\tex/latex/anyfontsize\any
+fontsize.sty
+Package: anyfontsize 2007/11/22 anyfontsize.sty by pts
 )
 (C:\Users\JeroenVerjauw\AppData\Local\Programs\MiKTeX\tex/latex/braket\braket.s
 ty)
@@ -43,12 +57,12 @@ Package: amstext 2021/08/26 v2.01 AMS text
 sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks17
-\ex@=\dimen142
+\ex@=\dimen143
 ))
 (C:\Users\JeroenVerjauw\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.
 sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen143
+\pmbraise@=\dimen144
 )
 (C:\Users\JeroenVerjauw\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.
 sty
@@ -71,7 +85,7 @@ LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen144
+\big@size=\dimen145
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
 \macc@depth=\count275
@@ -89,12 +103,12 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \column@=\count280
 \maxfields@=\count281
 \andhelp@=\toks19
-\eqnshift@=\dimen145
-\alignsep@=\dimen146
-\tagshift@=\dimen147
-\tagwidth@=\dimen148
-\totwidth@=\dimen149
-\lineht@=\dimen150
+\eqnshift@=\dimen146
+\alignsep@=\dimen147
+\tagshift@=\dimen148
+\tagwidth@=\dimen149
+\totwidth@=\dimen150
+\lineht@=\dimen151
 \@envbody=\toks20
 \multlinegap=\skip52
 \multlinetaggap=\skip53
@@ -107,7 +121,8 @@ kend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count282
 \l__pdf_internal_box=\box54
-) (main.aux)
+)
+No file main.aux.
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
@@ -124,6 +139,23 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.8 X_
+      {\pi}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    Calculating math sizes for size <27> on input line 8.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.9 \end{document}
+                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
 
 
 [1
@@ -136,22 +168,19 @@ L3 programming layer <2024-12-25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 1182 strings out of 473536
- 18768 string characters out of 5711084
- 406964 words of memory out of 5000000
- 24462 multiletter control sequences out of 15000+600000
- 559291 words of font info for 38 fonts, out of 8000000 for 9000
+ 1267 strings out of 473536
+ 22268 string characters out of 5711084
+ 406375 words of memory out of 5000000
+ 24537 multiletter control sequences out of 15000+600000
+ 562250 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,8n,65p,218b,121s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 56i,5n,65p,255b,110s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/JeroenVerjauw/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmex10.pfb><C:/Users/JeroenVerjauw/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/JeroenVerjauw/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/JeroenVerjauw/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on "C:\Users\JeroenVerjauw\projects\Python website\pages\miscell
-aneous\write_latex\main.pdf" (1 page, 35755 bytes).
+onts/cm/cmmi12.pfb><C:/Users/JeroenVerjauw/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr17.pfb>
+Output written on main.pdf (1 page, 17868 bytes).
 PDF statistics:
- 26 PDF objects out of 1000 (max. 8388607)
+ 16 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

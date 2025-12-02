@@ -3,3 +3,4 @@ streamlit-ace
 pylatex
 matplotlib
 latextools
+drawsvg
