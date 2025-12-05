@@ -95,10 +95,11 @@ with cols_container[-1]:
 
 # Example LaTeX expression
 latex_expr = st.text_input("write something here")
-file_name_latex_expr = latex_expr.replace("\\", "").replace("$", "")
-write_tex_file(latex_expr, TEX_FILE, default_fontsize)
-compile_latex_to_pdf(TEX_FILE, OUTPUT_DIR)
-convert_pdf_to_svg(PDF_FILE, OUTPUT_DIR / f"{file_name_latex_expr}.svg")
+if latex_expr:
+    file_name_latex_expr = latex_expr.replace("\\", "").replace("$", "")
+    write_tex_file(latex_expr, TEX_FILE, default_fontsize)
+    compile_latex_to_pdf(TEX_FILE, OUTPUT_DIR)
+    convert_pdf_to_svg(PDF_FILE, OUTPUT_DIR / f"{file_name_latex_expr}.svg")
 
 
 # --- Generate SVG ---
