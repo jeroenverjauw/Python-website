@@ -113,33 +113,33 @@ if latex_expr:
 
 
     # # --- Generate SVG ---
-    # svg_width = f"{width_value}{width_unit}"
-    # svg_height = f"{rows*50}{width_unit}"  # simple proportional height
+    svg_width = f"{width_value}{width_unit}"
+    svg_height = f"{rows*50}{width_unit}"  # simple proportional height
 
-    # # --- Load your LaTeX SVG ---
-    # with open(f"{OUTPUT_DIR}/{file_name_latex_expr}.svg", "r", encoding="utf-8") as f:
-    #     latex_svg = f.read()
+    # --- Load your LaTeX SVG ---
+    with open(f"{OUTPUT_DIR}/{file_name_latex_expr}.svg", "r", encoding="utf-8") as f:
+        latex_svg = f.read()
 
-    # # Optional: strip XML header if present
-    # if "<?xml" in latex_svg:
-    #     latex_svg = latex_svg.split("?>", 1)[1]
+    # Optional: strip XML header if present
+    if "<?xml" in latex_svg:
+        latex_svg = latex_svg.split("?>", 1)[1]
 
-    # # Example SVG: draw a rectangle with given width/height
-    # svg_content = f"""
-    # <svg xmlns="http://www.w3.org/2000/svg" width="{svg_width}" height="{svg_height}">
-    #     <rect x="0" y="0" width="{svg_width}" height="{svg_height}" fill="white" stroke="black"/>
-    #     <g transform="translate(20,50)">
-    #         {latex_svg}
-    #     </g>
-    #     <g transform="translate(20,10) scale(2)">
-    #         {latex_svg}
-    #     </g> 
-    # </svg>
-    # """
+    # Example SVG: draw a rectangle with given width/height
+    svg_content = f"""
+    <svg xmlns="http://www.w3.org/2000/svg" width="{svg_width}" height="{svg_height}">
+        <rect x="0" y="0" width="{svg_width}" height="{svg_height}" fill="white" stroke="black"/>
+        <g transform="translate(20,50)">
+            {latex_svg}
+        </g>
+        <g transform="translate(20,10) scale(2)">
+            {latex_svg}
+        </g> 
+    </svg>
+    """
 
-    # # Show SVG in app
-    # st.subheader("Preview SVG")
-    # st.image(f"data:image/svg+xml;base64,{base64.b64encode(svg_content.encode()).decode()}")
+    # Show SVG in app
+    st.subheader("Preview SVG")
+    st.image(f"data:image/svg+xml;base64,{base64.b64encode(svg_content.encode()).decode()}")
 
     # # Download button
     # b64 = base64.b64encode(svg_content.encode()).decode()
