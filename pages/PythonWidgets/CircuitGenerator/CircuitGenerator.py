@@ -105,7 +105,8 @@ if latex_expr:
     compile_latex_to_pdf(TEX_FILE, OUTPUT_DIR)
     convert_pdf_to_svg(PDF_FILE, OUTPUT_DIR / f"{file_name_latex_expr}.svg")
 
-    svg_bytes = load_file_bytes(SVG_FILE)
+
+    svg_bytes = load_file_bytes(OUTPUT_DIR / f"{file_name_latex_expr}.svg")
     if svg_bytes:
         st.download_button("📄 Download SVG", svg_bytes, "equation.svg", "image/svg+xml")
 
