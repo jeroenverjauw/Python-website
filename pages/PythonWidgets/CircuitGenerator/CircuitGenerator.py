@@ -117,8 +117,6 @@ if svg_bytes:
 svg_width = f"{width_value}{width_unit}"
 svg_height = f"{rows*50}{width_unit}"  # simple proportional height
 
-st.write(svg_height)
-
 # --- Load your LaTeX SVG ---
 with open(f"{OUTPUT_DIR}/{file_name_latex_expr}.svg", "r", encoding="utf-8") as f:
     latex_svg = f.read()
@@ -127,10 +125,10 @@ with open(f"{OUTPUT_DIR}/{file_name_latex_expr}.svg", "r", encoding="utf-8") as 
 if "<?xml" in latex_svg:
     latex_svg = latex_svg.split("?>", 1)[1]
 
+# <rect x="0" y="0" width="{svg_width}" height="{svg_height}" fill="white" stroke="black"/>
 # Example SVG: draw a rectangle with given width/height
 svg_content = f"""
 <svg xmlns="http://www.w3.org/2000/svg" width="{svg_width}" height="{svg_height}">
-    <rect x="0" y="0" width="{svg_width}" height="{svg_height}" fill="white" stroke="black"/>
     <g transform="translate(20,50)">
         {latex_svg}
     </g>
@@ -139,8 +137,6 @@ svg_content = f"""
     </g> 
 </svg>
 """
-
-st.write(svg_content)
 
 # Show SVG in app
 st.subheader("Preview SVG")
