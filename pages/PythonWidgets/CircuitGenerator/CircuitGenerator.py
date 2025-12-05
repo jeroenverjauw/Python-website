@@ -116,6 +116,8 @@ if latex_expr:
     svg_width = f"{width_value}{width_unit}"
     svg_height = f"{rows*50}{width_unit}"  # simple proportional height
 
+    st.write(svg_height)
+
     # --- Load your LaTeX SVG ---
     with open(f"{OUTPUT_DIR}/{file_name_latex_expr}.svg", "r", encoding="utf-8") as f:
         latex_svg = f.read()
@@ -137,15 +139,17 @@ if latex_expr:
     </svg>
     """
 
+    st.write(svg_content)
+
     # Show SVG in app
     st.subheader("Preview SVG")
     st.image(f"data:image/svg+xml;base64,{base64.b64encode(svg_content.encode()).decode()}")
 
     # # Download button
-    # b64 = base64.b64encode(svg_content.encode()).decode()
-    # href = f'<a href="data:image/svg+xml;base64,{b64}" download="drawing.svg">📥 Download SVG</a>'
-    # st.markdown(href, unsafe_allow_html=True)
+    b64 = base64.b64encode(svg_content.encode()).decode()
+    href = f'<a href="data:image/svg+xml;base64,{b64}" download="drawing.svg">📥 Download SVG</a>'
+    st.markdown(href, unsafe_allow_html=True)
     # Display what was entered
-    # st.write("Width:", width_value, width_unit)
-    # st.write("Rows:", rows, "Columns:", cols)
-    # st.write("Row values:", col_inputs)
+    st.write("Width:", width_value, width_unit)
+    st.write("Rows:", rows, "Columns:", cols)
+    st.write("Row values:", col_inputs)
