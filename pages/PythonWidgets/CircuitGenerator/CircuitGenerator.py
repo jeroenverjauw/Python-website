@@ -11,6 +11,8 @@ import base64
 
 from pages.PythonWidgets.CircuitGenerator.functions import *
 
+def load_file_bytes(path: Path):
+    return path.read_bytes() if path.exists() else None
 
 # Constants
 OUTPUT_DIR = Path("pages/PythonWidgets/CircuitGenerator")
