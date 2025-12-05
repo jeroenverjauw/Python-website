@@ -73,6 +73,8 @@ if latex_input:
     convert_pdf_to_svg(PDF_FILE, SVG_FILE)
     crop_svg_with_inkscape(SVG_FILE, SVG_FILE)
 
+    st.write(latex_input)
+
     if image_format == "SVG":
         svg_bytes = load_file_bytes(SVG_FILE)
         if svg_bytes:
